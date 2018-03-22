@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- 加载对话框样式 -->
+    <style name="LoadDialog" parent="android:Theme.Dialog">
+        <!--背景是什么颜色-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否有标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否是浮动的，作用是点击对话框以外，其是否要消失,true表示消失-->
+        <item name="android:windowIsFloating">false</item>
+        <!--是否是透明的-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--定义contentoverlay的背景-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否允许对话框的背景变暗，true就是允许-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

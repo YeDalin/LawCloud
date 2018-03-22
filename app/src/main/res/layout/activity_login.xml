@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="64dp"
+                android:layout_marginTop="75dp"
+                android:src="@mipmap/touxiang" />
+
+            <!--手机号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:digits="@string/phone_number"
+                    android:hint="@string/please_input_phone"
+                    android:maxLength="11"
+                    android:textColorHint="#A8A8A8"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeefee" />
+
+
+            </LinearLayout>
+
+            <!--密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/please_input_password"
+                    android:maxLength="20"
+                    android:inputType="textPassword"
+                    android:textColorHint="#A8A8A8"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeefee" />
+
+
+            </LinearLayout>
+
+
+            <!--忘记密码、注册账号-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    android:layout_width="88dp"
+                    android:layout_height="27dp"
+                    android:background="@drawable/shape_login_account_bn"
+                    android:gravity="center"
+                    android:text="@string/forgot_password"
+                    android:textColor="#888893"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="88dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_login_account_bn"
+                    android:gravity="center"
+                    android:text="@string/register_account"
+                    android:textColor="#888893"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+            <!--登录-->
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/shape_login_button_bn"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <!--第三方登录文字提示-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#eeefee" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="60dp"
+                    android:background="#fff"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/choose_other_way_login"
+                    android:textColor="#8a8a94"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <!--第三方登录 QQ、微信-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_weixin"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/weixin" />
+
+
+                <ImageView
+                    android:id="@+id/iv_qq"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/qq" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

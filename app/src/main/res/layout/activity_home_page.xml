@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.sanhedao.lawcloudserver.activity.HomePageActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c1c1c1"
+        android:visibility="visible" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="0dp"
+                android:drawableTop="@drawable/selector_home_logo"
+                android:gravity="center"
+                android:text="@string/home_page"
+                android:textColor="@drawable/selector_home_text_color"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_massage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:drawablePadding="0dp"
+                android:drawableTop="@drawable/selector_massage_logo"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/message"
+                android:textColor="@drawable/selector_home_text_color"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/rb_massage"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/shape_massage_count_bn"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="9"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rb_personal_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:button="@null"
+                android:drawablePadding="0dp"
+                android:drawableTop="@drawable/selector_user_logo"
+                android:gravity="center"
+                android:text="@string/personal_center"
+                android:textColor="@drawable/selector_home_text_color"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="12dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_photo"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/touxiang" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="18888888"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:id="@+id/v_online"
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_online_stutas_bg" />
+
+                <TextView
+                    android:id="@+id/tv_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/online_on"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2018-02-02"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="33dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3cb2eb"
+            android:text="@string/question_describe2"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:text="法律概念是指法律对各种具有法律意义的事物状态、行为进行概括而形成的专门术语。"
+            android:textColor="#666666"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_ji"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/urgent"
+            android:layout_alignParentRight="true"/>
+
+        <!--<net.sanhedao.lawcloudserver.view.JiaJiTextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="急"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:gravity="right|bottom"
+            android:paddingRight="3dp"
+            android:paddingBottom="4dp"
+            android:layout_alignParentRight="true"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>
